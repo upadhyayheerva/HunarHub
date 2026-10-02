@@ -1,0 +1,175 @@
+.admin-dashboard {
+  padding: 30px;
+  background: #f7f8fc;
+  min-height: calc(100vh - 70px);
+}
+
+/* Header */
+
+.admin-header {
+  margin-bottom: 30px;
+}
+
+.admin-header h1 {
+  margin: 0;
+  font-size: 32px;
+  color: #222;
+}
+
+.admin-header p {
+  margin-top: 8px;
+  color: #777;
+}
+
+
+/* Statistics */
+
+.admin-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.admin-stat-card {
+  background: white;
+  padding: 22px;
+  border-radius: 14px;
+
+  display: flex;
+  align-items: center;
+  gap: 18px;
+
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+
+  transition: 0.2s;
+}
+
+.admin-stat-card:hover {
+  transform: translateY(-3px);
+}
+
+.stat-icon {
+  width: 55px;
+  height: 55px;
+
+  border-radius: 12px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #f0e7ff;
+
+  font-size: 25px;
+}
+
+.admin-stat-card h3 {
+  margin: 0;
+
+  font-size: 28px;
+
+  color: #222;
+}
+
+.admin-stat-card p {
+  margin: 5px 0 0;
+
+  color: #777;
+}
+
+
+/* Quick Actions */
+
+.admin-section {
+  margin-top: 35px;
+}
+
+.admin-section h2 {
+  margin-bottom: 20px;
+  color: #222;
+}
+
+.admin-actions {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+}
+
+.admin-actions button {
+  padding: 16px;
+
+  border: none;
+  border-radius: 10px;
+
+  background: white;
+
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+
+  cursor: pointer;
+
+  font-size: 15px;
+
+  transition: 0.2s;
+}
+
+.admin-actions button:hover {
+  transform: translateY(-2px);
+  background: #f5efff;
+}
+
+
+/* Loading */
+
+.admin-loading {
+  padding: 50px;
+  text-align: center;
+
+  font-size: 18px;
+}
+
+
+/* Error */
+
+.admin-error {
+  margin: 30px;
+  padding: 15px;
+
+  border-radius: 8px;
+
+  background: #ffe5e5;
+  color: #c62828;
+}
+
+
+/* Responsive */
+
+@media (max-width: 1000px) {
+
+  .admin-stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .admin-actions {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
+@media (max-width: 600px) {
+
+  .admin-dashboard {
+    padding: 20px;
+  }
+
+  .admin-stats-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .admin-actions {
+    grid-template-columns: 1fr;
+  }
+
+  .admin-header h1 {
+    font-size: 26px;
+  }
+}

@@ -1,0 +1,163 @@
+.admin-manage-page {
+  min-height: calc(100vh - 70px);
+  padding: 30px;
+  background: #f7f8fc;
+}
+
+.admin-page-header {
+  margin-bottom: 25px;
+}
+
+.admin-page-header h1 {
+  margin: 0;
+  font-size: 30px;
+  color: #222;
+}
+
+.admin-page-header p {
+  margin-top: 8px;
+  color: #777;
+}
+
+/* Products Grid */
+
+.admin-products-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+
+/* Product Card */
+
+.admin-product-card {
+  background: white;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+  transition: 0.2s;
+}
+
+.admin-product-card:hover {
+  transform: translateY(-3px);
+}
+
+/* Product Image */
+
+.admin-product-image {
+  width: 100%;
+  height: 210px;
+  background: #f3f3f3;
+  overflow: hidden;
+}
+
+.admin-product-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Product Information */
+
+.admin-product-info {
+  padding: 20px;
+}
+
+.admin-product-info h2 {
+  margin: 0 0 8px;
+  font-size: 20px;
+  color: #222;
+}
+
+.admin-product-category {
+  display: inline-block;
+  margin: 0 0 10px;
+  padding: 5px 10px;
+  background: #eee7ff;
+  color: #6d28d9;
+  border-radius: 15px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.admin-product-price {
+  margin: 5px 0 15px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #7c3aed;
+}
+
+.admin-product-info p {
+  color: #666;
+  font-size: 14px;
+  margin: 8px 0;
+}
+
+.admin-product-info strong {
+  color: #333;
+}
+
+/* Delete */
+
+.delete-product-btn {
+  width: 100%;
+  margin-top: 15px;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  background: #ef4444;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.delete-product-btn:hover {
+  background: #dc2626;
+}
+
+/* Loading */
+
+.admin-page-message {
+  padding: 50px;
+  text-align: center;
+  font-size: 18px;
+}
+
+/* Error */
+
+.admin-page-error {
+  margin: 30px;
+  padding: 15px;
+  background: #ffe5e5;
+  color: #c62828;
+  border-radius: 8px;
+}
+
+/* Empty */
+
+.admin-empty {
+  background: white;
+  padding: 40px;
+  text-align: center;
+  border-radius: 14px;
+  color: #777;
+}
+
+/* Responsive */
+
+@media (max-width: 1000px) {
+  .admin-products-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 650px) {
+  .admin-manage-page {
+    padding: 20px;
+  }
+
+  .admin-products-grid {
+    grid-template-columns: 1fr;
+  }
+}
